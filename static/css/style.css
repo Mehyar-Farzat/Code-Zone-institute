@@ -4513,7 +4513,7 @@ fieldset:disabled .btn {
     --bs-navbar-brand-padding-y: 0.3125rem;
     --bs-navbar-brand-margin-end: 1rem;
     --bs-navbar-brand-font-size: 1.25rem;
-    --bs-navbar-brand-color: rgba(var(--bs-success-rgb))
+    --bs-navbar-brand-color: rgba(var(--bs-success));
     --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
     --bs-navbar-nav-link-padding-x: 0.5rem;
     --bs-navbar-toggler-padding-y: 0.25rem;
@@ -4550,7 +4550,7 @@ fieldset:disabled .btn {
     padding-bottom: var(--bs-navbar-brand-padding-y);
     margin-right: var(--bs-navbar-brand-margin-end);
     font-size: var(--bs-navbar-brand-font-size);
-    color: rgba(var(--bs-success-rgb));
+    color: var(--bs-success);
     text-decoration: none;
     white-space: nowrap
 }
@@ -4560,8 +4560,6 @@ fieldset:disabled .btn {
     color: var(--bs-navbar-brand-hover-color)
 }
 */
-
-
 .navbar-nav {
     --bs-nav-link-padding-x: 0;
     --bs-nav-link-padding-y: 0.5rem;

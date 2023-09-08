@@ -1,0 +1,82 @@
+{% extends 'base.html' %} 
+{% block title %} 
+Signup 
+{% endblock title %} 
+
+
+{% block body %}
+
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-md-4"></div>
+
+    <div class="col-md-4">
+      <h1 class="text-center text-success">Signup</h1>
+      <hr />
+
+      <form action="/auth/signup/" method="post">
+        {% csrf_token %}
+        <br />
+        <label for="name">Name</label>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control p-2 mb-3"
+            id="name"
+            name="name"
+            placeholder="Enter Full Name"
+            required
+          />
+        </div>
+        <label for="email">Email</label>
+        <div class="form-group">
+          <input
+            type="email"
+            class="form-control p-2 mb-3"
+            id="email"
+            name="email"
+            placeholder="Enter email"
+            required
+          />
+        </div>
+        <label for="pass1">Password </label>
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control p-2 mb-3"
+            id="pass1"
+            name="pass1"
+            placeholder="Password must be atleast 8 characters"
+            required
+          />
+        </div>
+
+        <label for="pass2">Confirm Password</label>
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control p-2 mb-3"
+            id="pass2"
+            name="pass2"
+            placeholder="Confirm Password"
+            required
+          />
+        </div>
+        <br />
+        <div class="d-grid gap-2 mb-3">
+          <button type="submit" class="btn btn-success get-started-btn">
+            SignIn
+          </button>
+        </div>
+
+        <br />
+        Already User? <a href="/auth/login/" class= "text-success">Login</a>
+        <br />
+      </form>
+    </div>
+
+    <div class="col-md-4"></div>
+  </div>
+</div>
+
+{% endblock body %}

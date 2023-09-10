@@ -79,4 +79,6 @@ def handleLogin(request):
     
 
 def handleLogout(request):
-    return render(request, 'logout.html')
+    logout(request)
+    messages.success(request,"Logout Success")
+    return render(request, 'login.html')

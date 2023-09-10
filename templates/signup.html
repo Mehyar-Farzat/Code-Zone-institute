@@ -12,11 +12,10 @@ Signup
 
     <div class="col-md-4">
       <h1 class="text-center text-success">Signup</h1>
-      <hr />
-
+      {% include "messages.html" %}
       <form action="/auth/signup/" method="post">
         {% csrf_token %}
-        <br />
+        <br/>
         <label for="name">Name</label>
         <div class="form-group">
           <input
